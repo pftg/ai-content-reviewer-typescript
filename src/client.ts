@@ -26,7 +26,6 @@ import {
   ReviewUpdateParams,
   Reviews,
 } from './resources/reviews';
-import { Status } from './resources/status';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
@@ -137,7 +136,7 @@ export class AIContentReviewer {
    * API Client for interfacing with the AI Content Reviewer API.
    *
    * @param {string | undefined} [opts.apiKey=process.env['AI_CONTENT_REVIEWER_API_KEY'] ?? undefined]
-   * @param {string} [opts.baseURL=process.env['AI_CONTENT_REVIEWER_BASE_URL'] ?? /api/v1] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['AI_CONTENT_REVIEWER_BASE_URL'] ?? http://localhost:3000/api/v1] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -159,7 +158,7 @@ export class AIContentReviewer {
     const options: ClientOptions = {
       apiKey,
       ...opts,
-      baseURL: baseURL || `/api/v1`,
+      baseURL: baseURL || `http://localhost:3000/api/v1`,
     };
 
     this.baseURL = options.baseURL!;
@@ -205,7 +204,7 @@ export class AIContentReviewer {
    * Check whether the base URL is set to its default.
    */
   #baseURLOverridden(): boolean {
-    return this.baseURL !== '/api/v1';
+    return this.baseURL !== 'http://localhost:3000/api/v1';
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
@@ -725,11 +724,9 @@ export class AIContentReviewer {
   static toFile = Uploads.toFile;
 
   reviews: API.Reviews = new API.Reviews(this);
-  status: API.Status = new API.Status(this);
 }
 
 AIContentReviewer.Reviews = Reviews;
-AIContentReviewer.Status = Status;
 
 export declare namespace AIContentReviewer {
   export type RequestOptions = Opts.RequestOptions;
@@ -744,6 +741,4 @@ export declare namespace AIContentReviewer {
     type ReviewListParams as ReviewListParams,
     type ReviewSubmitParams as ReviewSubmitParams,
   };
-
-  export { Status as Status };
 }
