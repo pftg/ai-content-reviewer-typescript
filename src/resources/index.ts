@@ -10,4 +10,3 @@ export {
   type ReviewListParams,
   type ReviewSubmitParams,
 } from './reviews';
-export { Status } from './status';

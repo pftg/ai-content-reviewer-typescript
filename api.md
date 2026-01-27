@@ -13,5 +13,3 @@ Methods:
 - <code title="patch /reviews/{id}">client.reviews.<a href="./src/resources/reviews.ts">update</a>(id, { ...params }) -> ReviewResponse</code>
 - <code title="get /reviews">client.reviews.<a href="./src/resources/reviews.ts">list</a>({ ...params }) -> ReviewListResponse</code>
 - <code title="post /reviews">client.reviews.<a href="./src/resources/reviews.ts">submit</a>({ ...params }) -> ReviewResponse</code>
-
-# Status

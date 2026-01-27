@@ -328,13 +328,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['AI_CONTENT_REVIEWER_BASE_URL'] = ''; // empty
       const client = new AIContentReviewer({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('/api/v1');
+      expect(client.baseURL).toEqual('http://localhost:3000/api/v1');
     });
 
     test('blank env variable', () => {
       process.env['AI_CONTENT_REVIEWER_BASE_URL'] = '  '; // blank
       const client = new AIContentReviewer({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('/api/v1');
+      expect(client.baseURL).toEqual('http://localhost:3000/api/v1');
     });
 
     test('in request options', () => {
