@@ -15,11 +15,3 @@ Methods:
 - <code title="post /reviews">client.reviews.<a href="./src/resources/reviews.ts">submit</a>({ ...params }) -> ReviewResponse</code>
 
 # Status
-
-Types:
-
-- <code><a href="./src/resources/status.ts">StatusCheckResponse</a></code>
-
-Methods:
-
-- <code title="get /status/{job_id}">client.status.<a href="./src/resources/status.ts">check</a>(jobID) -> StatusCheckResponse</code>
