@@ -1,4 +1,4 @@
-configured_endpoints: 5
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/jetthoughts%2Fai-content-reviewer-b38a7dcea6f8616bc8c8cae50a394bd1e6e2d563ab727f994ea00a755f689457.yml
-openapi_spec_hash: 52943ecdb8d07ed9c312ea50b106ae46
+configured_endpoints: 4
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/jetthoughts%2Fai-content-reviewer-16b9d0419cad481c827630ee704aa33b81c00fc5240a541aea8ea02e33c206e8.yml
+openapi_spec_hash: f80e9a4d8e8887a063cb97aa93d77566
 config_hash: 2874776dc0612bc62859c65d097b81b5

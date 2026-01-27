@@ -26,7 +26,7 @@ import {
   ReviewUpdateParams,
   Reviews,
 } from './resources/reviews';
-import { Status, StatusCheckResponse } from './resources/status';
+import { Status } from './resources/status';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
@@ -745,5 +745,5 @@ export declare namespace AIContentReviewer {
     type ReviewSubmitParams as ReviewSubmitParams,
   };
 
-  export { Status as Status, type StatusCheckResponse as StatusCheckResponse };
+  export { Status as Status };
 }
