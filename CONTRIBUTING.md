@@ -60,7 +60,7 @@ $ yarn link ai-content-reviewer
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global ai-content-reviewer
+$ pnpm link --global ai-content-reviewer
 ```
 
 ## Running tests
