@@ -41,7 +41,7 @@ describe('resource reviews', () => {
         acceptance_criteria: 'acceptance_criteria',
         ai_instructions: 'ai_instructions',
         content: 'content',
-        media_file: await toFile(Buffer.from('# my file contents'), 'README.md'),
+        media_file: await toFile(Buffer.from('Example data'), 'README.md'),
         media_url: 'https://example.com',
       },
     });
@@ -86,7 +86,7 @@ describe('resource reviews', () => {
         acceptance_criteria: 'acceptance_criteria',
         ai_instructions: 'ai_instructions',
         content: 'content',
-        media_file: await toFile(Buffer.from('# my file contents'), 'README.md'),
+        media_file: await toFile(Buffer.from('Example data'), 'README.md'),
         media_url: 'https://example.com',
       },
     });
