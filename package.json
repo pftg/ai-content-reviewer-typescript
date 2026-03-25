@@ -1,6 +1,6 @@
 {
   "name": "ai-content-reviewer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The official TypeScript library for the AI Content Reviewer API",
   "author": "AI Content Reviewer <>",
   "types": "dist/index.d.ts",
