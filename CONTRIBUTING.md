@@ -42,14 +42,14 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/ai-content-reviewer-typescript.git
+$ npm install git+ssh://git@github.com:pftg/ai-content-reviewer-typescript.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/ai-content-reviewer-typescript
+$ git clone https://www.github.com/pftg/ai-content-reviewer-typescript
 $ cd ai-content-reviewer-typescript
 
 # With yarn
@@ -60,16 +60,10 @@ $ yarn link ai-content-reviewer
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global ai-content-reviewer
+$ pnpm link --global ai-content-reviewer
 ```
 
 ## Running tests
-
-Most tests require you to [set up a mock server](https://github.com/stoplightio/prism) against the OpenAPI spec to run the tests.
-
-```sh
-$ npx prism mock path/to/your/openapi.yml
-```
 
 ```sh
 $ pnpm run test
